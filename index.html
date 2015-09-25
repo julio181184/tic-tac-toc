@@ -69,11 +69,12 @@
                     if ($("#mode").html()==="1"){
                         var found = false;
                        $.each( $("td"),function(index,element){
-                           if( $(element).html() ==="" &&!found){
-                                $(element).html() ==="O";
+                           if( $(element).html() ==="" && !found){
+                                $(element).html("O");
                                 found = true;
                            }
                        });
+                    clickCounter++;
                     }
                               
                 });
