@@ -41,7 +41,7 @@
             </tr>
         </table><br>
         <center>
-            <h1>Toggle Mode:<span id="mode"> 2</span> player</h1>
+            <h1>Toggle Mode: <span id="mode">2</span> player</h1>
         </center>
         <center>
             <button class="boton" onclick="xClick();"> FIll grid with X</button>
@@ -69,8 +69,8 @@
                     if ($("#mode").html()==="1"){
                         var found = false;
                        $.each( $("td"),function(index,element){
-                           if( $(element).html ==="" &&!found){
-                                $(element).html ==="O";
+                           if( $(element).html() ==="" &&!found){
+                                $(element).html() ==="O";
                                 found = true;
                            }
                        });
